@@ -13,7 +13,7 @@ spec:
           name: "cel"
         params:
         - name: "filter"
-          value: "header.match('X-GitHub-Event', 'push') && body.ref == 'refs/heads/qm1-GitOps-MQ-23052022' && body.repository.full_name == 'prod-ref-guide/mq-qm01'"
+          value: "header.match('X-GitHub-Event', 'push') && body.ref == 'refs/heads/qm1-gunu-mq-1' && body.repository.full_name == 'gunu-mq-1/mq-qm01'"
     bindings:
       - ref: cnkt-trigger-binding
     template:
@@ -24,7 +24,7 @@ spec:
           name: "cel"
         params:
         - name: "filter"
-          value: "header.match('X-GitHub-Event', 'push') && body.ref == 'refs/heads/master' && body.repository.full_name == 'prod-ref-guide/mq-spring-app'"
+          value: "header.match('X-GitHub-Event', 'push') && body.ref == 'refs/heads/mq-spring-gunu-mq-1' && body.repository.full_name == 'gunu-mq-1/mq-spring-app'"
     bindings:
       - ref: cnkt-trigger-binding
     template:
